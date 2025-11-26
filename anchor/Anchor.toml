@@ -8,12 +8,17 @@ skip-lint = false
 [programs.localnet]
 basic = "JAVuBXeBZqXNtS73azhBDAoYaaAFfo4gWXoZe2e7Jf8H"
 
+[programs.devnet]
+basic = "GyjkaXHRBEAxJz3iyXCE5ux63q3vZTSCKikp1tfJbuFT"
+
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
-wallet = "~/.config/solana/id.json"
+#cluster = "localnet"
+cluster = "devnet"
+#wallet = "~/.config/solana/id.json"
+wallet = "~/.config/solana/devnet.json"
 
 [scripts]
 test = "../node_modules/.bin/jest --preset ts-jest"
